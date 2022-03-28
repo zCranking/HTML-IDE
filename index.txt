@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mr.Filter</title>
+        
+<title>Realtime Image Identification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script defer src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <h3 id="h1">Mr.Filter🎩</h3>
+            <hr id="h1">
+            <center>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 heading_div">
+                    Filters:
+                    <br>
+                    <div class="heading_div2">
+                        <button id="mustache">Mustache👨 |</button><button id="glasses"> Glasses👓 |</button><button id="hair"> Hair👱 |</button><button id="bow-tie"> Bow Tie🎀 </button>
+                    </div>
+                </div>
+            </center>
+        </center>
+        <div class="copyright_footer">
+            Developed By - zCranking
+        </div>
+    </body>
+</html>
