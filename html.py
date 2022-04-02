@@ -22,9 +22,11 @@ my_text = Text(root, height=32, width = 80, foreground="#FFC43D", font=("Comic S
 my_text.place(relx=0.5, rely=0.55, anchor=CENTER)
 
 name = ""
+name1 = ""
 
 def openfile():
     global name
+    global name1
     my_text.delete(1.0, END)
     input_file_name.delete(0, END)
     html_file = filedialog.askopenfilename(title = "hacking your html file",
@@ -32,6 +34,7 @@ def openfile():
     
     print(html_file)
     name = os.path.basename(html_file)
+    name1 = os.path.abspath(html_file)
     formatted_name = name.split('.')[0]
     input_file_name.insert(END, formatted_name)
     root.title(formatted_name)
@@ -42,6 +45,7 @@ def openfile():
 
 def save():
     file_name = input_file_name.get()
+    print(file_name)
     html_file = open(file_name+".txt", 'w')
     data = my_text.get(1.0, END)
     print(data)
@@ -64,9 +68,9 @@ def close():
             root.destroy()
 
 def run():
-    global name
-    print(name)
-    webbrowser.open(name)
+    global name1
+    print(name1)
+    webbrowser.open(name1)
 
 open_button = Button(root, image=openImg, command=openfile)
 open_button.place(relx=0.10, rely=0.03, anchor=CENTER)
