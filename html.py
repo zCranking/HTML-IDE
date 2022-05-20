@@ -30,7 +30,7 @@ def openfile():
     my_text.delete(1.0, END)
     input_file_name.delete(0, END)
     html_file = filedialog.askopenfilename(title = "hacking your html file",
-                                           filetypes =(("html files", "*.html"),))
+                                           filetypes =(("html files", "*    ),))
     
     print(html_file)
     name = os.path.basename(html_file)
